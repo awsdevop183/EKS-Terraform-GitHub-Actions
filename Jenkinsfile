@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Git Pulling') {
             steps {
-                git branch: 'main', url: 'git@github.com:awsdevop183/EKS-Terraform-GitHub-Actions.git'
+                git branch: 'main', url: 'https://github.com/awsdevop183/EKS-Terraform-GitHub-Actions.git'
             }
         }
         stage('Init') {
