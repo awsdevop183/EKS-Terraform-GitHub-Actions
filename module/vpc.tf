@@ -155,6 +155,12 @@ resource "aws_security_group" "eks-cluster-sg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"] // It should be specific IP range
   }
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]  # Allow from any IP address (change as needed for security)
+  }
 
   egress {
     from_port   = 0
