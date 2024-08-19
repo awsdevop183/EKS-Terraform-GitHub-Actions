@@ -50,6 +50,7 @@ pipeline {
                         // } else {
                         //     error "Invalid value for Terraform_Action: ${params.Terraform_Action}"
                         // }
+                        // delete it when you uncomment
                     }
                 }
             }
