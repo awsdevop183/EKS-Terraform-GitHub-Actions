@@ -3,7 +3,7 @@ resource "aws_instance" "jump" {
     disable_api_termination = false
     instance_type = "t2.medium"
     private_ip = "10.16.0.113"
-    key_name = "madhukey-mac"
+    key_name = "madhukey"
     disable_api_stop = false
     user_data = file("jump.sh")
     root_block_device {
